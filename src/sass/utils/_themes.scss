@@ -1,0 +1,111 @@
+.theme-light {
+  --primary-text-color: #000000;
+  --bg-modal-color: #ffffff;
+  --bg-color: #ffffff;
+  --text-color: #ffffff;
+  --current-link-color: #ff001b;
+  --bkg-color: rgba(0, 0, 0, 0.56);
+  --btn-color: #ff6b08;
+  --secondary-text-color: #ffffff;
+  --dark-bg-color: #242424;
+  --footer-color: #545454;
+  --input-hover: #bbbbbb;
+  --first-color-title-card: #000000;
+  --secondary-color-title-card: #ff6b08;
+  --bkg-rating: #ff6b08;
+  --pag-nav-button: #f7f7f7;
+  --color-secondary: #f7f7f7;
+}
+
+.theme-dark {
+  --primary-text-color: #ffffff;
+  --bg-modal-color: #504f4f;
+  --bg-color: #242424;
+  --text-color: #ffffff;
+  --current-link-color: #ff001b;
+  --bkg-color: rgba(0, 0, 0, 0.56);
+  --btn-color: #ff6b08;
+  --secondary-text-color: #cccccc;
+  --dark-bg-color: #424242;
+  --footer-color: #ffffff;
+  --input-hover: #bbbbbb;
+  --first-color-title-card: #000000;
+  --secondary-color-title-card: #ff6b08;
+  --bkg-rating: #ff6b08;
+  --pag-nav-button: #ffffff;
+}
+
+.theme-switcher__switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.theme-switcher__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.theme-switcher__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-bg-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-switcher__slider:before {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url('/src/images/night.svg');
+  background-size: 80%;
+  filter: invert(1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .theme-switcher__slider {
+  background-color: var(--bg-color);
+}
+
+input:focus + .theme-switcher__slider {
+  box-shadow: 0 0 1px var(--font-color);
+}
+
+input:checked + .theme-switcher__slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+  background: white url('/src/images/day.svg');
+  filter: invert(0);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rounded sliders */
+.theme-switcher__slider.theme-switcher__slider--round {
+  border-radius: 34px;
+}
+
+.theme-switcher__slider.theme-switcher__slider--round:before {
+  border-radius: 50%;
+}

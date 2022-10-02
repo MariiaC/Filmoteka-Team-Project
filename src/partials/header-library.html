@@ -1,0 +1,54 @@
+<header class="hero-lib">
+  <div class="container">
+    <nav class="header-nav">
+      <a href="./index.html" class="logo">
+        <!-- <img class="logo__icon" src="./images/film-icon.svg" alt="Icon logo" /> -->
+        <svg class="logo__icon">
+          <use href="./images/symbol-sprite.svg#film-icon"></use>
+        </svg>
+        <span class="logo__label">Filmoteka</span>
+      </a>
+      <ul class="header-nav__end">
+        <li class="header-nav__item">
+          <a href="./index.html" class="header-nav__link">HOME</a>
+        </li>
+        <li class="header-nav__item">
+          <a
+            href="./library.html"
+            class="header-nav__link header-nav__link--current-header"
+            >MY LIBRARY</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <label id="switch" class="theme-switcher__switch">
+      <input type="checkbox" id="slider" />
+      <span class="theme-switcher__slider theme-switcher__slider--round"></span>
+    </label>
+  </div>
+
+  <div class="hero-lib-buttons__container">
+    <ul class="hero-lib-buttons__list">
+      <li class="hero-lib-buttons__item">
+        <button
+          type="button"
+          name="button"
+          class="hero-lib-button"
+          data-action="watched"
+        >
+          watched
+        </button>
+      </li>
+      <li class="hero-buttons__item">
+        <button
+          type="button"
+          name="button"
+          class="hero-lib-button"
+          data-action="queue"
+        >
+          queue
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>

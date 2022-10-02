@@ -1,0 +1,14 @@
+@import './utils/vars';
+@import './utils/themes';
+@import './utils/mixins';
+@import './utils/common';
+
+@import './components/main';
+@import './components/header';
+@import './components/gallery';
+@import './components/header-library';
+@import './components/modal.scss';
+@import './components/loader.scss';
+@import './components/scroll-to-top.scss';
+@import './components/footer.scss';
+@import './components/team.scss';
