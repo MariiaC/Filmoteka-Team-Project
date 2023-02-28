@@ -2,7 +2,7 @@
   "name": "js-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://serovsergey.github.io/js-project",
+  "homepage": "https://mariiac.github.io/Filmoteka-Team-Project",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /js-project/"
